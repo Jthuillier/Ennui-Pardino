@@ -8,7 +8,7 @@ const Header = () => {
         <header>
             <ul className={styles.navbar}>
                 <Link to='/'> <h1>L'ennui</h1> </Link>
-                <li> <Link>Profil</Link>   </li>
+                <li> <Link to='/Profil'>Profil</Link>   </li>
                 <li> <Link>Déconnexion</Link>   </li>
                 </ul>
         </header>

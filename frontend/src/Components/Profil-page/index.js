@@ -1,24 +1,29 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
+import React,{useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 import Header from '../Header';
+import fetcha from './profilPage';
 
 
-const Profil = () => {
+
+const ProfilPage = () => {
+    useEffect(()=>{ fetcha()})
     return(
         <div> 
             <Header />
             <div className={styles.container}>
                 <div className={styles.filterBox}>
                     <p>Compte</p>
-                    <span></span>
-                    <p className={styles.mail}>Modifier l'adresse mail</p>
-                    <p className={styles.password}>Modifier le mot de passe</p>
-
+                    <li>
+                        <p>Pseudo : <span id="username"></span></p>       
+                        <p>Email : <span id="email"></span></p>
+                        <p>Chapitre : <span id="progress"></span></p>
+                        <p>Mort : <span id="death"></span> fois</p>
+                    </li>
             </div>
         </div>
     </div>
     )
 }
 
-export default Profil
+export default ProfilPage

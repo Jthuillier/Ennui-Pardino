@@ -10,14 +10,14 @@ const Gladys = () => {
              <Header/>
                  <div className={styles.container} style={{
                     backgroundImage: 'url(' + Image + ')', 
-                    backgroundSize: '100vw' 
+                    backgroundSize: 'cover' 
                     }}>
 
-                <button> <Link to="/" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/transition" className={styles.Link}>Page suivante</Link></button>
 
                 {/* GAUCHE */}
                 <div className={styles.filterBox}><Link to="/">
+                <button> <Link to="/" className={styles.Link}>Page précédente</Link></button>
+                <button> <Link to="/transition" className={styles.Link}>Page suivante</Link></button>
         <p className={styles.text}>Vous vous approchez de l’enclos. Vous apercevez Ferdinand, ce vieux bouc solitaire et, osons le dire, plutôt antipathique. La dernière fois que vous avez tenté de le caresser il vous a fait comprendre que personne n’avait le droit de lever la main sur lui en vous donnant un coup de corne. Ce jour là vous aviez pleuré, mais c’était davantage le fait de la surprise que par réelle douleur. Ça avait cependant été une grande leçon de vie : certains animaux sont de vrais connards.</p>
         <p className={styles.text}>Vous décidez de l’ignorer et scrutez l’enclos en profondeur avant d’appeler celle à qui vous êtes venu dire au revoir :</p>
         <p className={styles.text}>« Gladys ! Glaaaaaaaadyyyyyyyyyyyyys ! Où es tu passée ma belle ? »</p>
@@ -30,10 +30,10 @@ const Gladys = () => {
      
         
 
-                </Link></div> 
+                </Link> 
 
                 {/* DROITE */}
-                <div className={styles.filterBoxRight}><Link to='/transition'>
+                <Link to='/transition'>
         <p className={styles.text}>Vous escaladez la clôture et vous agenouillez près d’elle. Comme si elle avait compris vos intentions, elle vient nicher sa tête au creux de votre épaule. Vous la serrez contre vous en lui caressant doucement la tête. Elle demeure silencieuse pendant cette étreinte emplie d’émotions.</p>
         <p className={styles.text}>Elle pose ses deux pattes sur vos cuisses.</p>
         <p className={styles.text}>Tu dois partir ? La candeur de son visage est irrésistible.</p>

@@ -10,14 +10,14 @@ const Aurevoir = () => {
              <Header/>
                  <div className={styles.container} style={{
                     backgroundImage: 'url(' + Image + ')', 
-                    backgroundSize: '100vw' 
+                    backgroundSize: 'cover' 
                     }}>
 
-                <button> <Link to="/prevenirlesparents" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/prevenirlesparentsaurevoirmere" className={styles.Link}>Page suivante</Link></button>
 
                 {/* GAUCHE */}
                 <div className={styles.filterBox}><Link to="/prevenirlesparents">
+                <button> <Link to="/prevenirlesparents" className={styles.Link}>Page précédente</Link></button>
+                <button> <Link to="/prevenirlesparentsaurevoirmere" className={styles.Link}>Page suivante</Link></button>
         <p className={styles.text}>C’était un petit jeu entre vous qui ressortait de temps à autre. Elle était un commandant impitoyable mais vous étiez également un soldat irréprochable, de telle sorte qu’elle ne puisse jamais vous condamner au pain sec et à l’eau pour insubordination ou toute autre entorse à l’étiquette. Malin.</p>
         <p className={styles.text}>« Maman, avant de partir, j’avais juste une petite chose à dire.</p>
         <p className={styles.text}>Petite, mes fesses, autant essayer de convaincre le Roi de renoncer à la dime.</p>
@@ -31,10 +31,10 @@ const Aurevoir = () => {
      
         
 
-                </Link></div> 
+                </Link>
 
                 {/* DROITE */}
-                <div className={styles.filterBoxRight}><Link to='/prevenirlesparentsaurevoirmere'>
+              <Link to='/prevenirlesparentsaurevoirmere'>
         <p className={styles.text}>« ...et Grisou m’a appris que j’étais l’élu... »</p>
         <p className={styles.text}>Elle lève les yeux en ciel.</p>
         <p className={styles.text}>« ... je dois partir affronter le néant... »</p>

@@ -10,15 +10,15 @@ const AurevoirDeux = () => {
              <Header/>
                  <div className={styles.container} style={{
                     backgroundImage: 'url(' + Image + ')', 
-                    backgroundSize: '100vw' 
+                    backgroundSize: 'cover' 
                     }}>
-
-                <button> <Link to="/prevenirlesparentsaurevoir" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/" className={styles.Link}>Page suivante</Link></button>
 
                 {/* GAUCHE */}
                 <div className={styles.filterBox}><Link to="/prevenirlesparentsaurevoir">
         
+
+                <button> <Link to="/prevenirlesparentsaurevoir" className={styles.Link}>Page précédente</Link></button>
+                <button> <Link to="/" className={styles.Link}>Page suivante</Link></button>
     
         
         <p className={styles.text}>Votre position se fait plus ferme. Votre expression est calme et déterminée. Votre regard ne laisse plus place au doute, il est si intense qu’il pourrait pousser un loup affamé à s’enfuir la queue entre les jambes. </p>
@@ -32,10 +32,10 @@ const AurevoirDeux = () => {
      
         
 
-                </Link></div> 
+                </Link>
 
                 {/* DROITE */}
-                <div className={styles.filterBoxRight}>
+         
     
      
         <p className={styles.text}>« Accepte ce qui est et ne peut être changé. Une joute s’est déclarée entre Le Néant et l’essence même de toute création. L’ordre des choses ne doit pas être interrompu. Ton fils doit mener une quête importante. Il est l’élu des Dieux et de la prophétie. C’est irrévocable. »</p>

@@ -14,21 +14,21 @@ const D = () => {
                     backgroundSize: 'cover' 
                     }}>
 
-                <button> <Link to="/C" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/E" className={styles.Link}>Page suivante</Link></button>
 
                     
                      {/* GAUCHE */}
                      <div className={styles.filterBox}> <Link to="/C">
+                <button> <Link to="/C" className={styles.Link}>Page précédente</Link></button>
+                <button> <Link to="/E" className={styles.Link}>Page suivante</Link></button>
         <p className={styles.text}>- C’est sûr, mais il faudra te montrer prudent et éviter les accidents, est-ce bien clair ? Le reprit-elle en pointant sur lui un doigt accusateur.</p>
         <p className={styles.text}>- Affirmatif. Je suis un homme, un vrai, désormais. Je ferai attention je te le promets.</p>
         <p className={styles.text}>- Très bien, dans ce cas viens m’embrasser et file. Tu es libre ce matin. En revanche cet après-midi tu devra aller aider ton père à traire les vaches.</p>
         <p className={styles.text}>De retour dans sa chambre il trouva Grisou, perché cette fois sur son lit. Il attendait sagement qu’on daigne lui prêter attention. L’enfant, obnubilé, n’avait d’yeux que pour son couteau, qu’il tournait et retournait dans tous les sens. Le soupesant  et orientant la lame de telle sorte que le soleil s’y reflète.</p>
         <p className={styles.text}>« Ecoute-moi »</p>
         <p className={styles.text}>L’enfant se figea un instant. Il avait cru entendre son chat lui parler. Il fallait vraiment qu’il se change les idées et qu’il s’occupe davantage l’esprit. Si aujourd’hui il parlait avec son chat, qu’en serait-il demain ? Il irait haranguer les champs de laitues ? Cela lui rappela le triste sort de l’ancien forgeron. Il avait commencé par parler tout seul, ce qui ma foi n’est pas si dérangeant, hélas il avait continué à s’enfoncer toujours plus dans les limbes de la folie. On l’avait retrouvé un matin dans le poulailler du voisin, ne portant sur lui qu’un linge sale en guise de sous vêtements, tentant de jouer une partie d’échecs avec un pigeon. </p>
-                    </Link> </div>
+                    </Link> 
                      {/* DROITE */}
-                     <div className={styles.filterBoxRight}><Link to="/E" className={styles.Link}>
+                    <Link to="/E" className={styles.Link}>
         <p className={styles.text}> L’oiseau, disait-on, avait renversé quelques pièces à droite à gauche, avait déposé une fiente en plein milieu du plateau et roucoulait d’un air triomphant. Et depuis ce jour on n’avait plus entendu parler du…</p>
         <p className={styles.text}>« Assez. Concentre-toi humain, j’ai d’importantes choses à te dire »</p>
         <p className={styles.text}>L’enfant écarquilla les yeux et tourna lentement la tête jusqu’à faire face à l’animal. « Mais tu...tu... »</p>

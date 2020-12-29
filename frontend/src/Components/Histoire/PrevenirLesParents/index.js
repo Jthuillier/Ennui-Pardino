@@ -10,14 +10,14 @@ const Prevenir = () => {
              <Header/>
                  <div className={styles.container} style={{
                     backgroundImage: 'url(' + Image + ')', 
-                    backgroundSize: '100vw' 
+                    backgroundSize: 'cover' 
                     }}>
 
-                <button> <Link to="/" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/prevenirlesparentsaurevoir" className={styles.Link}>Page suivante</Link></button>
 
                 {/* GAUCHE */}
                 <div className={styles.filterBox}><Link to="/transition">
+                <button> <Link to="/" className={styles.Link}>Page précédente</Link></button>
+                <button> <Link to="/prevenirlesparentsaurevoir" className={styles.Link}>Page suivante</Link></button>
         
         <p className={styles.text}>« Bon, j’ai fini de traire ces dames. Au fait p’pa. Ce matin le chat m’a confié une mission. Il m’a tout expliqué lorsque je suis rentré dans son esprit... »</p>
         <p className={styles.text}>Il valait mieux être direct avec lui et croiser les doigts pour qu’il ne percute que plus tard, quand vous serez déjà loin.</p>
@@ -35,10 +35,10 @@ const Prevenir = () => {
      
         
 
-                </Link></div> 
+                </Link>
 
                 {/* DROITE */}
-                <div className={styles.filterBoxRight}><Link to='/prevenirlesparentsaurevoir'>
+              <Link to='/prevenirlesparentsaurevoir'>
         
         <p className={styles.text}>En rejoignant la maison, vous croisez Grisou, il ne vous adresse pas la parole. Vous pensiez que parler aux animaux serait plus impressionnant que ça. La réalité c’est que la plupart des animaux n’ont ni le temps, ni l’envie de parler avec les hommes, car beaucoup se souviennent.</p>
         <p className={styles.text}>La chasse, l’exploitation, l’extermination...De manière générale, l’Humanité n’a pas apporté que des bonnes choses aux animaux. Si ce n’est aucune.</p>

@@ -11,7 +11,9 @@ body{
     min-height:100vh;
     height: auto
     }
-
+button:focus{
+    outline: none;
+}
 
 .container{
     background-color: #1F1E1E;
@@ -29,8 +31,20 @@ body{
     color:white;
     letter-spacing: 1.2rem;
     margin:4rem 8rem; 
+
+    animation-duration: 3s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   50%   {opacity:0; }
+   100% { opacity:1; }
     
 }
+    
+
 
 .largeBox{
     border: white solid 0.1px;

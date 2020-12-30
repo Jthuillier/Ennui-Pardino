@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 
-
-
 .navbar{
     font-family: 'Almendra SC', serif;
     background-color: #1F1E1E;
@@ -18,8 +16,18 @@ h1{
     font-size: 1.2rem;
     color:white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .navbar li{
     list-style: none;
+}
+
+.img{
+    height: 25px;
+    width: 25px;
+}
+
+#btnb{
+    color: red !important;
 }

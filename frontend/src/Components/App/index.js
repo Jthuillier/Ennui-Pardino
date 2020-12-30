@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import WelcomePage from '../Welcome-page';
@@ -9,6 +8,7 @@ import InscriptionAccepted from '../Inscription-accepted';
 import HomePage from '../Home-page';
 import Prologue from '../Histoire/Prologue';
 import Profil from '../Profil-page';
+import Lecteur from '../Lecteur';
 import A from '../Histoire/A';
 import B from '../Histoire/B';
 import C from '../Histoire/C';
@@ -44,9 +44,8 @@ function App() {
       <Route path="/InscriptionAccepted" component={InscriptionAccepted} />
       <Route path="/HomePage" component={HomePage} />
       <Route path='/Profil' component={Profil}/>
-
-
       <Route path="/Prologue" component={Prologue} />
+      <Route path="/Lecteur" component={Lecteur} />
       <Route path="/A" component={A} />
       <Route path="/B" component={B} />
       <Route path="/C" component={C} />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles.module.css';
 import Header from '../../Header';
+import Image from '../../../img/parents.png';
 
 const AurevoirDeux = () => {
   
@@ -14,12 +15,10 @@ const AurevoirDeux = () => {
                     }}>
 
                 {/* GAUCHE */}
-                <div className={styles.filterBox}><Link to="/prevenirlesparentsaurevoir">
-        
-
+                <div className={styles.filterBox}>
+                <div className={styles.btnP}>
                 <button> <Link to="/prevenirlesparentsaurevoir" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/" className={styles.Link}>Page suivante</Link></button>
-    
+                </div>
         
         <p className={styles.text}>Votre position se fait plus ferme. Votre expression est calme et déterminée. Votre regard ne laisse plus place au doute, il est si intense qu’il pourrait pousser un loup affamé à s’enfuir la queue entre les jambes. </p>
         <p className={styles.text}>«  Assez ! » C’est vous qui parlez, mais ce n’est pas votre voix.</p>
@@ -28,11 +27,7 @@ const AurevoirDeux = () => {
         <p className={styles.text}>Vous vous retrouvez de nouveau à flotter dans l’esprit du matou, seulement cette fois vous n’êtes pas seul. Votre mère est comme tétanisée et fascinée à la fois, c’est à se demander si elle n’a pas cessé de respirer. </p>
         <p className={styles.text}>Les yeux du chat s’ouvrent en grand et vous surplombent tous les deux. La mâchoire de votre mère s’affaisse de telle sorte qu’elle paraît complètement droguée, voire en passe de perdre instantanément toute forme de santé mentale. Dans ce monde il y a deux type de personnes : celles qui acceptent les choses et celles qui pètent les plombs. Pour votre mère, tout semblait se jouer en ce moment précis.</p>
         <p className={styles.text}>Les pupilles du chat oscillent lentement, comme la flamme d’une bougie. Il faut reconnaître que c’est un regard captivant, hypnotique. Il brise le silence et entame d’une voix puissante :</p>
-       
-     
-        
-
-                </Link>
+              
 
                 {/* DROITE */}
          
@@ -45,9 +40,14 @@ const AurevoirDeux = () => {
         <p className={styles.text}>C’était un simple sourire, mais il était suffisant. Elle avait compris. Elle avait acceptée. Elle s’était résignée.</p>
         <p className={styles.text}>« Bon courage mon garçon ».</p>
         <p className={styles.text}>Ses traits inspiraient la paix et la confiance. </p>
-        <p className={styles.text}></p>
-        <p className={styles.text}></p>
-                </div>
+        <p className={styles.text}>A SUIVRE.</p>
+        
+
+        {/* <div className={styles.btnS}>
+        <button> <Link to="/" className={styles.Link2}>Page suivante</Link></button>
+        </div> */}
+               
+            </div>
             </div>
         </div>
 

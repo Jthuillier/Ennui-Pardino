@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles.module.css';
 import Header from '../../Header';
+import Image from '../../../img/grange.png';
 
 const Transition = () => {
   
@@ -15,18 +16,14 @@ const Transition = () => {
 
 
                 {/* GAUCHE */}
-                <div className={styles.filterBox}><Link to="/">
+                <div className={styles.filterBox}>
+                <div className={styles.btnP}>
                 <button> <Link to="/" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/" className={styles.Link}>Page suivante</Link></button>
+                </div>
+
         <p className={styles.text}>Vous-vous rendez à la grange, ou tout du moins ce qui s’en rapproche le plus. Votre père est occupé à rassembler le foin que les vaches ont pris soin d’éparpiller. Si vous trouvez que les cochons sont bordéliques, les vaches ne sont pas en reste. C’est tout les matin la même rengaine, et impossible de leur apprendre de quelque façon que ce soit. </p>
         <p className={styles.text}>« Salut fiston, t’es v’nu m’aider à traire les filles ? ». Les filles. Le terme n’était pas anodin. La seule distinction que faisait votre père entre son bétail et vous, c’était que les animaux n’étaient pas autorisés à dormir à la maison. Cela ne vous choque pas, car vous avez toujours été élevé dans cette perspective : aucune espèce n’est supérieure à une autre et toutes ont droit au bonheur et à minimum de dignité.</p>
        
-      
-       
-     
-        
-
-                </Link> 
 
                 {/* DROITE */}
                

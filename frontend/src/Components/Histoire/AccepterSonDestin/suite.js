@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles.module.css';
 import Header from '../../Header';
+import Image from '../../../img/Cielbleu.png';
 
 const Suite = () => {
   
@@ -15,16 +16,16 @@ const Suite = () => {
 
 
                 {/* GAUCHE */}
-                <div className={styles.filterBox}><Link to="/accepterSonDestin">
+                <div className={styles.filterBox}>
+                <div className={styles.btnP}>
                 <button> <Link to="/accepterSonDestin" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/" className={styles.Link}>Page suivante</Link></button>
+                </div>
+        
         <p className={styles.text}>Ce pourrait être un dieu ou simplement un curieux qui s’ennuie. Toujours est-il que lorsque tu sera face à un choix ou bien cerné d’incertitudes, il sera toujours là pour te suggérer une voie plutôt qu’une autre. Il te suffira simplement d’écouter ton cœur. »</p>
         <p className={styles.text}>A ce stade, même le discours nébuleux du matou semblait aller de soi. Il était un garçon d’à peine dix ans qui allait partir à l’aventure, aidé du Lecteur, pour repousser le Néant qui menace d’aspirer l’essence même de toute chose. C’était devenu une évidence pour lui. Le doute avait déserté son esprit, seul restait l’envie d’en découdre et d’essayer son couteau flambant neuf.</p>
         <p className={styles.text}>« Soit prudent » firent les derniers mots que « prononça » le chat. </p>
         <p className={styles.text}>L’enfant ouvrit les yeux, juste à quelques centimètres de la tête du chat. Hier il aurait cru rêver, mais c’est bien un clin d’œil que lui adressa Grisou avant de bondir du lit. Il avait d’autres chats à fouetter.</p>
-        
 
-                </Link> 
 
                 {/* DROITE */}
                

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles.module.css';
 import Header from '../../Header';
+import Image from '../../../img/parents.png';
 
 const Aurevoir = () => {
   
@@ -15,9 +16,12 @@ const Aurevoir = () => {
 
 
                 {/* GAUCHE */}
-                <div className={styles.filterBox}><Link to="/prevenirlesparents">
+                <div className={styles.filterBox}>
+
+                <div className={styles.btnP}>
                 <button> <Link to="/prevenirlesparents" className={styles.Link}>Page précédente</Link></button>
-                <button> <Link to="/prevenirlesparentsaurevoirmere" className={styles.Link}>Page suivante</Link></button>
+                </div>
+
         <p className={styles.text}>C’était un petit jeu entre vous qui ressortait de temps à autre. Elle était un commandant impitoyable mais vous étiez également un soldat irréprochable, de telle sorte qu’elle ne puisse jamais vous condamner au pain sec et à l’eau pour insubordination ou toute autre entorse à l’étiquette. Malin.</p>
         <p className={styles.text}>« Maman, avant de partir, j’avais juste une petite chose à dire.</p>
         <p className={styles.text}>Petite, mes fesses, autant essayer de convaincre le Roi de renoncer à la dime.</p>
@@ -29,12 +33,9 @@ const Aurevoir = () => {
         <p className={styles.text}></p>
        
      
-        
-
-                </Link>
 
                 {/* DROITE */}
-              <Link to='/prevenirlesparentsaurevoirmere'>
+         
         <p className={styles.text}>« ...et Grisou m’a appris que j’étais l’élu... »</p>
         <p className={styles.text}>Elle lève les yeux en ciel.</p>
         <p className={styles.text}>« ... je dois partir affronter le néant... »</p>
@@ -45,13 +46,15 @@ const Aurevoir = () => {
         <p className={styles.text}>Un sentiment d’impuissance qui vous accable. C’est terrible de n’avoir que la vérité à offrir quand cette dernière prend la forme de folles inepties. Soudain votre impuissance se mue en colère. </p>
         <p className={styles.text}>« Je suis très sérieux. Si je ne fais rien, bientôt le monde deviendra insipide, plat et sans saveurs. </p>
         <p className={styles.text}>-Super, oui. » Elle n’était pas contrariante, il fallait le reconnaître. Cette pantalonnade allait toutefois s’arrêter sur le champs.</p>
-        <p className={styles.text}></p>
-        <p className={styles.text}></p>
-        <p className={styles.text}></p>
-        <p className={styles.text}></p>
-        <p className={styles.text}></p>
-            </Link>    </div>
-            </div>
+      
+
+        <div className={styles.btnS}>
+        <button> <Link to="/prevenirlesparentsaurevoirmere" className={styles.Link2}>Page suivante</Link></button>
+        </div>
+
+        </div>
+        </div>
+        
         </div>
 
     )
